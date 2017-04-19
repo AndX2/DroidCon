@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@drawable/background_phone_left</item>
+    </style>
+
+    <style name="AppTheme.Main">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="toolbar_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:theme">@style/AppTheme.PopupOverlay</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:textColor">@color/colorHeaderText</item>
+    </style>
+
+    <style name="PartnerCardView">
+        <item name="cardCornerRadius">3dp</item>
+    </style>
+
+    <style name="TextViewMargin">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+    </style>
+
+    <style name="PartnerCardBar">
+
+    </style>
+
+</resources>

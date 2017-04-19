@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_session"
+            android:icon="@drawable/all_session_24dp"
+            android:title="@string/nav_title_all_sessions"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_my_schedule"
+            android:icon="@drawable/my_schedule_24dp"
+            android:title="@string/my_schedule" />
+        <item
+            android:id="@+id/nav_speakers"
+            android:icon="@drawable/speaker_24dp"
+            android:title="@string/nav_speakers" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/contacts_24dp"
+            android:title="@string/nav_contacts" />
+    </group>
+
+    <item android:title="@string/nav_actions">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_share" />
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/terms_24dp"
+                android:title="@string/nav_terms_of_droidcon" />
+        </menu>
+    </item>
+
+</menu>

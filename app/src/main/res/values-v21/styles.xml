@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PartnerCardView">
+        <item name="android:elevation">8dp</item>
+        <item name="cardCornerRadius">3dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PartnerCardBar">
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="toolbar_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:theme">@style/AppTheme.PopupOverlay</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:textColor">@color/colorHeaderText</item>
+        <item name="android:elevation">24dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.github.andx2.droidcon.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.goka.kenburnsview.KenBurnsView
+                    android:id="@+id/img_toolbar_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_view_toolbar_max_height"
+                    android:fitsSystemWindows="true" />
+
+                <FrameLayout
+                    android:id="@+id/img_toolbar_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <!--android:background="@drawable/background_phone_left"-->
+            <!--android:src="@drawable/droid_in_hat" />-->
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/home_toolbar"
+                style="@style/toolbar_style"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/collapsing_toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:contentScrim="@color/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">-->
+
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<com.goka.kenburnsview.KenBurnsView-->
+            <!--android:id="@+id/img_toolbar_slider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/home_view_toolbar_max_height"-->
+            <!--android:fitsSystemWindows="true"/>-->
+
+            <!--<FrameLayout-->
+            <!--android:id="@+id/img_toolbar_frame"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <!--</FrameLayout>-->
+
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--style="@style/toolbar_style"-->
+                <!--app:layout_collapseMode="pin" />-->
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <include layout="@layout/content_main" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/home_recycler"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</android.support.design.widget.CoordinatorLayout>

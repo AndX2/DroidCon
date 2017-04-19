@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    android:background="@android:color/white"
+    android:layout_width="156dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_scheduler_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/header_txt_size"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+        android:elevation="16dp"
+        android:text="11:40"/>
+    <FrameLayout
+        android:id="@+id/fl_scheduler_item_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSchHeadR1">
+        <TextView
+            android:id="@+id/tv_scheduler_item_title"
+            android:layout_marginTop="@dimen/half_base_margin_8dp"
+            android:layout_marginLeft="@dimen/half_base_margin_8dp"
+            android:layout_marginRight="@dimen/half_base_margin_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:textColor="@color/colorHeaderText"
+            android:textSize="@dimen/subheader_txt_size"
+            android:textStyle="bold"
+            android:text="Готовим приложеньки вкусно с добавлением Нуги"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_scheduler_item_author_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/author_scheduler_item"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
